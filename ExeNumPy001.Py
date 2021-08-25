@@ -22,8 +22,14 @@ a[1:-1, 1:-1] = b
 #Tomar cuidado em copiar arrays pois o que for modificado em um 
 #Irá ser modificado no outro, para evitar isso faz-se 
 #a = b.copy() ao invés de a = b
-print(genfromtxt('matriz.txt', delimiter=','))
+#PEGANDO ALGUMAS PARTES DA MATRIZ
+(genfromtxt('matriz.txt', delimiter=','))
 b = np.array(genfromtxt('matriz.txt', delimiter=','))
 (b[2:4, 0:2])
 (b[[0, 1, 2, 3] ,[1, 2, 3, 4]])
-print(b[[0,4,5], 3:])
+(b[[0,4,5], 3:])
+
+#MÉDIA DOS ELEMENTOS DA MATRIZ
+c = np.array([[1,2,3],[4,5,6],[6,6,6],[2,3,6]])
+media = (sum(sum(c)))/c.size
+(media)
