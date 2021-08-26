@@ -31,7 +31,7 @@ stats = np.array([[1, 2, 3], [4, 5, 6]])
 antes = np.array([[1, 2, 3, 4], [5, 6, 7, 8]])#(2, 4)
 (antes)
 depois = antes.reshape(8, 1)#(8, 1)
-(depois)
+print(depois)
 depois2 = antes.reshape(2,2,2)
 (depois2)
 #Agrupar arrays
